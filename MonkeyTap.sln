@@ -1,0 +1,33 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonkeyTap", "MonkeyTap\MonkeyTap.csproj", "{6C1F2976-A43B-4E16-BF48-230C206FBB0C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessageExtension", "MessageExtension\MessageExtension.csproj", "{6CFC9E3E-807B-4367-9AC4-DFD03206F5DE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhone = Release|iPhone
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6C1F2976-A43B-4E16-BF48-230C206FBB0C}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{6C1F2976-A43B-4E16-BF48-230C206FBB0C}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{6C1F2976-A43B-4E16-BF48-230C206FBB0C}.Release|iPhone.ActiveCfg = Release|iPhone
+		{6C1F2976-A43B-4E16-BF48-230C206FBB0C}.Release|iPhone.Build.0 = Release|iPhone
+		{6C1F2976-A43B-4E16-BF48-230C206FBB0C}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{6C1F2976-A43B-4E16-BF48-230C206FBB0C}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{6C1F2976-A43B-4E16-BF48-230C206FBB0C}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{6C1F2976-A43B-4E16-BF48-230C206FBB0C}.Debug|iPhone.Build.0 = Debug|iPhone
+		{6CFC9E3E-807B-4367-9AC4-DFD03206F5DE}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{6CFC9E3E-807B-4367-9AC4-DFD03206F5DE}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{6CFC9E3E-807B-4367-9AC4-DFD03206F5DE}.Release|iPhone.ActiveCfg = Release|iPhone
+		{6CFC9E3E-807B-4367-9AC4-DFD03206F5DE}.Release|iPhone.Build.0 = Release|iPhone
+		{6CFC9E3E-807B-4367-9AC4-DFD03206F5DE}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{6CFC9E3E-807B-4367-9AC4-DFD03206F5DE}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{6CFC9E3E-807B-4367-9AC4-DFD03206F5DE}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{6CFC9E3E-807B-4367-9AC4-DFD03206F5DE}.Debug|iPhone.Build.0 = Debug|iPhone
+	EndGlobalSection
+EndGlobal

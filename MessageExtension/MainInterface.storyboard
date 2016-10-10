@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ObA-dk-sSI">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Game View Controller-->
+        <scene sceneID="7MM-of-jgj">
+            <objects>
+                <viewController id="ObA-dk-sSI" customClass="GameViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qkL-Od-lgU"/>
+                        <viewControllerLayoutGuide type="bottom" id="n38-gi-rB5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zMn-AG-sqS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="JAn-Ro-WL4"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="yqZ-2t-oBR">
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" contentMode="left" horizontalHuggingPriority="251" text="Time: 0.0s" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="1" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vbL-rV-STa">
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="Ehs-5g-8Tm"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="50"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Monkey" translatesAutoresizingMaskIntoConstraints="NO" id="mj3-bH-l9a"/>
+                                    <label opaque="NO" clipsSubviews="YES" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap monkey to begin!" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="1" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d1e-fi-ked">
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="UJz-zZ-Pli"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="50"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="n38-gi-rB5" firstAttribute="top" secondItem="JAn-Ro-WL4" secondAttribute="bottom" id="0UI-he-Y3l"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yqZ-2t-oBR" secondAttribute="trailing" id="B7e-4d-QT0"/>
+                            <constraint firstItem="yqZ-2t-oBR" firstAttribute="leading" secondItem="zMn-AG-sqS" secondAttribute="leadingMargin" id="D0g-ah-xq0"/>
+                            <constraint firstItem="JAn-Ro-WL4" firstAttribute="leading" secondItem="zMn-AG-sqS" secondAttribute="leading" id="SMJ-th-No8"/>
+                            <constraint firstItem="n38-gi-rB5" firstAttribute="top" secondItem="yqZ-2t-oBR" secondAttribute="bottom" constant="8" id="T2R-6e-c7j"/>
+                            <constraint firstItem="JAn-Ro-WL4" firstAttribute="top" secondItem="qkL-Od-lgU" secondAttribute="bottom" constant="-20" id="det-PC-ePV"/>
+                            <constraint firstItem="yqZ-2t-oBR" firstAttribute="top" secondItem="qkL-Od-lgU" secondAttribute="bottom" id="i1b-iw-RlO"/>
+                            <constraint firstItem="yqZ-2t-oBR" firstAttribute="centerX" secondItem="zMn-AG-sqS" secondAttribute="centerX" id="mVd-y2-L8A"/>
+                            <constraint firstAttribute="trailing" secondItem="JAn-Ro-WL4" secondAttribute="trailing" id="ybB-tl-htX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Monkey" destination="mj3-bH-l9a" id="gym-bS-lmI"/>
+                        <outlet property="ScoreLabel" destination="d1e-fi-ked" id="yIN-yL-N8U"/>
+                        <outlet property="TimerLabel" destination="vbL-rV-STa" id="4yT-rm-j0G"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X47-rx-isc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.59999999999999" y="120.53973013493254"/>
+        </scene>
+        <!--Score View Controller-->
+        <scene sceneID="Zr5-5K-yvx">
+            <objects>
+                <viewController storyboardIdentifier="ScoreVC" id="sp9-OI-rBl" customClass="ScoreViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="o4L-jc-yRv"/>
+                        <viewControllerLayoutGuide type="bottom" id="iyd-hc-fvs"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Bk3-IQ-urs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="CJD-Iy-KDI"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="WB7-gK-lhj">
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You scored 100!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="1" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gkB-Kg-wWT">
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="50"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kbE-TW-cW9">
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="Post Score"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dTQ-KY-3i8">
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="Play Again"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="CJD-Iy-KDI" secondAttribute="trailing" id="6Dh-c1-F9R"/>
+                            <constraint firstItem="CJD-Iy-KDI" firstAttribute="top" secondItem="o4L-jc-yRv" secondAttribute="bottom" constant="-20" id="Ass-Eo-Xby"/>
+                            <constraint firstItem="CJD-Iy-KDI" firstAttribute="leading" secondItem="Bk3-IQ-urs" secondAttribute="leading" id="EIs-Uj-GeT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="WB7-gK-lhj" secondAttribute="trailing" id="EQi-iB-jS4"/>
+                            <constraint firstItem="WB7-gK-lhj" firstAttribute="top" secondItem="o4L-jc-yRv" secondAttribute="bottom" constant="-20" id="V0d-H4-ddq"/>
+                            <constraint firstItem="iyd-hc-fvs" firstAttribute="top" secondItem="WB7-gK-lhj" secondAttribute="bottom" constant="30" id="XYi-YV-qJi"/>
+                            <constraint firstItem="iyd-hc-fvs" firstAttribute="top" secondItem="CJD-Iy-KDI" secondAttribute="bottom" id="jPe-AQ-VsJ"/>
+                            <constraint firstItem="WB7-gK-lhj" firstAttribute="leading" secondItem="Bk3-IQ-urs" secondAttribute="leadingMargin" id="xdt-Ug-3Yw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="FinalScoreLabel" destination="gkB-Kg-wWT" id="iA9-hl-JH1"/>
+                        <outlet property="PlayAgain" destination="dTQ-KY-3i8" id="EpV-sL-jHC"/>
+                        <outlet property="PostScore" destination="kbE-TW-cW9" id="auO-4J-gvb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tGo-7h-6Tj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="777.60000000000002" y="120.53973013493254"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Background" width="512" height="1024"/>
+        <image name="Monkey" width="512" height="512"/>
+    </resources>
+</document>
